@@ -103,6 +103,7 @@ class DatabaseSeeder extends Seeder
             ['kriteria_id' => 3, 'nama' => 'Rp 10.000.000 - Rp 15.000.000', 'keterangan' => 'Penghasilan antara 10 juta hingga 15 juta', 'bobot' => 5],
             ['kriteria_id' => 3, 'nama' => 'Rp 15.000.000 - Rp 20.000.000', 'keterangan' => 'Penghasilan antara 15 juta hingga 20 juta', 'bobot' => 5],
             ['kriteria_id' => 3, 'nama' => 'Rp 20.000.000 ke atas', 'keterangan' => 'Penghasilan lebih dari 20 juta', 'bobot' => 6],
+            ['kriteria_id' => 3, 'nama' => 'Rp 0 - Rp 1.000.000', 'keterangan' => 'Penghasilan antara 0 hingga 1 juta', 'bobot' => 1],
         ]);
 
         // Nilai
@@ -122,7 +123,8 @@ class DatabaseSeeder extends Seeder
             ['kriteria_id' => 5, 'nama' => '61 - 80 Tahun', 'keterangan' => 'Usia orang tua antara 61 hingga 80 tahun', 'bobot' => 1],
             ['kriteria_id' => 5, 'nama' => '41 - 60 Tahun', 'keterangan' => 'Usia orang tua antara 41 hingga 60 tahun', 'bobot' => 2],
             ['kriteria_id' => 5, 'nama' => '20 - 40 Tahun', 'keterangan' => 'Usia orang tua antara 20 hingga 40 tahun', 'bobot' => 3],
-            ['kriteria_id' => 5, 'nama' => '18 - 20 Tahun', 'keterangan' => 'Usia orang tua antara 18 hingga 20 tahun', 'bobot' => 2],
+            ['kriteria_id' => 5, 'nama' => '18 - 20 Tahun', 'keterangan' => 'Usia orang tua antara 18 hingga 20 tahun', 'bobot' => 4],
+            ['kriteria_id' => 5, 'nama' => '17 Tahun ke bawah', 'keterangan' => 'Usia orang tua kurang dari 17 tahun', 'bobot' => 5],
         ]);
 
         $data = [
@@ -138,10 +140,10 @@ class DatabaseSeeder extends Seeder
                 'alamat' => 'Jl. Mawar No. 1',
                 'no_hp' => '081234567890',
                 'Pekerjaan_Ortu_id' => 4, // Corresponding value for C1 = 4
-                'Tanggungan_Ortu_id' => 3, // Corresponding value for C2 = 3
+                'Tanggungan_Ortu_id' => 5, // Corresponding value for C2 = 3
                 'Penghasilan_Ortu_id' => 5, // Corresponding value for C3 = 5
-                'Nilai_id' => 3, // Corresponding value for C4 = 3
-                'Usia_Orangtua_id' => 2, // Corresponding value for C5 = 2
+                'Nilai_id' => 2, // Corresponding value for C4 = 3
+                'Usia_Orangtua_id' => 4, // Corresponding value for C5 = 2
                 'keterangan' => 'Calon penerima beasiswa'
             ],
             [
@@ -156,10 +158,10 @@ class DatabaseSeeder extends Seeder
                 'alamat' => 'Jl. Melati No. 10',
                 'no_hp' => '081345678901',
                 'Pekerjaan_Ortu_id' => 3, // Corresponding value for C1 = 3
-                'Tanggungan_Ortu_id' => 3, // Corresponding value for C2 = 3
-                'Penghasilan_Ortu_id' => 4, // Corresponding value for C3 = 4
-                'Nilai_id' => 4, // Corresponding value for C4 = 4
-                'Usia_Orangtua_id' => 2, // Corresponding value for C5 = 2
+                'Tanggungan_Ortu_id' => 5, // Corresponding value for C2 = 3
+                'Penghasilan_Ortu_id' => 3, // Corresponding value for C3 = 4
+                'Nilai_id' =>   1, // Corresponding value for C4 = 4
+                'Usia_Orangtua_id' => 4, // Corresponding value for C5 = 2
                 'keterangan' => 'Calon penerima beasiswa'
             ],
             [
@@ -174,10 +176,10 @@ class DatabaseSeeder extends Seeder
                 'alamat' => 'Jl. Tulip No. 15',
                 'no_hp' => '081456789012',
                 'Pekerjaan_Ortu_id' => 1, // Corresponding value for C1 = 1
-                'Tanggungan_Ortu_id' => 5, // Corresponding value for C2 = 5
-                'Penghasilan_Ortu_id' => 1, // Corresponding value for C3 = 1
-                'Nilai_id' => 3, // Corresponding value for C4 = 3
-                'Usia_Orangtua_id' => 4, // Corresponding value for C5 = 4
+                'Tanggungan_Ortu_id' => 4, // Corresponding value for C2 = 5
+                'Penghasilan_Ortu_id' => 7, // Corresponding value for C3 = 1
+                'Nilai_id' => 2, // Corresponding value for C4 = 3
+                'Usia_Orangtua_id' => 6, // Corresponding value for C5 = 4
                 'keterangan' => 'Calon penerima beasiswa'
             ],
             [
@@ -192,10 +194,10 @@ class DatabaseSeeder extends Seeder
                 'alamat' => 'Jl. Anggrek No. 5',
                 'no_hp' => '081567890123',
                 'Pekerjaan_Ortu_id' => 4, // Corresponding value for C1 = 4
-                'Tanggungan_Ortu_id' => 2, // Corresponding value for C2 = 2
+                'Tanggungan_Ortu_id' => 7, // Corresponding value for C2 = 2
                 'Penghasilan_Ortu_id' => 5, // Corresponding value for C3 = 5
-                'Nilai_id' => 3, // Corresponding value for C4 = 3
-                'Usia_Orangtua_id' => 2, // Corresponding value for C5 = 2
+                'Nilai_id' => 2, // Corresponding value for C4 = 3
+                'Usia_Orangtua_id' => 4, // Corresponding value for C5 = 2
                 'keterangan' => 'Calon penerima beasiswa'
             ],
             [
@@ -210,10 +212,10 @@ class DatabaseSeeder extends Seeder
                 'alamat' => 'Jl. Kenanga No. 3',
                 'no_hp' => '081678901234',
                 'Pekerjaan_Ortu_id' => 3, // Corresponding value for C1 = 3
-                'Tanggungan_Ortu_id' => 2, // Corresponding value for C2 = 2
-                'Penghasilan_Ortu_id' => 3, // Corresponding value for C3 = 3
-                'Nilai_id' => 3, // Corresponding value for C4 = 3
-                'Usia_Orangtua_id' => 2, // Corresponding value for C5 = 2
+                'Tanggungan_Ortu_id' => 8, // Corresponding value for C2 = 2
+                'Penghasilan_Ortu_id' => 2, // Corresponding value for C3 = 3
+                'Nilai_id' => 2, // Corresponding value for C4 = 3
+                'Usia_Orangtua_id' => 4, // Corresponding value for C5 = 2
                 'keterangan' => 'Calon penerima beasiswa'
             ],
             [
@@ -228,9 +230,9 @@ class DatabaseSeeder extends Seeder
                 'alamat' => 'Jl. Seruni No. 8',
                 'no_hp' => '081789012345',
                 'Pekerjaan_Ortu_id' => 2, // Corresponding value for C1 = 2
-                'Tanggungan_Ortu_id' => 2, // Corresponding value for C2 = 2
-                'Penghasilan_Ortu_id' => 1, // Corresponding value for C3 = 1
-                'Nilai_id' => 2, // Corresponding value for C4 = 2
+                'Tanggungan_Ortu_id' => 8, // Corresponding value for C2 = 2
+                'Penghasilan_Ortu_id' => 7, // Corresponding value for C3 = 1
+                'Nilai_id' => 3, // Corresponding value for C4 = 2
                 'Usia_Orangtua_id' => 1, // Corresponding value for C5 = 1
                 'keterangan' => 'Calon penerima beasiswa'
             ]

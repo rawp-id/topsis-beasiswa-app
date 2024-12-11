@@ -43,7 +43,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('usia-ortu', UsiaOrtuController::class);
 
     Route::resource('beasiswa', BeasiswaController::class);
+
+    Route::get('/topsis', [TopsisController::class, 'index'])->name('topsis.index');
+    Route::get('/ranking', [TopsisController::class, 'rank_view'])->name('topsis.ranking');
 });
 
-
-Route::get('/topsis', [TopsisController::class, 'index'])->name('topsis.index');

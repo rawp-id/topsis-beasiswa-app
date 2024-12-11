@@ -23,50 +23,67 @@
                 </a>
             </li>
 
+            <li class="nav-item {{ $title == 'Ranking' ? 'active' : '' }}">
+                <a href="/ranking" class="nav-link" wire:navigate>
+                    <i data-feather="hash"></i>
+                    <span>Ranking</span>
+                </a>
+            </li>
+
+            @if (Auth::user()->is_admin)
+                <li class="nav-item {{ $title == 'TOPSIS' ? 'active' : '' }}">
+                    <a href="/topsis" class="nav-link" wire:navigate>
+                        <i data-feather="divide-circle"></i>
+                        <span>Perhitungan Topsis</span>
+                    </a>
+                </li>
+            @endif
+
             {{-- <li class="nav-item {{ $title == 'riwayat' ? 'active' : '' }}">
                 <a href="/beasiswa/create" class="nav-link" wire:navigate>
                     <i data-feather="book"></i>
                     <span>Riwayat Pengajuan</span>
                 </a>
             </li> --}}
-
-            <li class="nav-label mt-4">Form Setting</li>
-            <li class="nav-item {{ $title == 'Kriteria' ? 'active' : '' }}">
-                <a href="/kriteria" class="nav-link" wire:navigate>
-                    <i data-feather="table"></i>
-                    <span>Kriteria</span>
-                </a>
-            </li>
-            <li class="nav-item {{ $title == 'Pekerjaan' ? 'active' : '' }}">
-                <a href="/pekerjaan-ortu" class="nav-link" wire:navigate>
-                    <i data-feather="briefcase"></i>
-                    <span>Pekerjaan Ortu</span>
-                </a>
-            </li>
-            <li class="nav-item {{ $title == 'Penghasilan' ? 'active' : '' }}">
-                <a href="/penghasilan-ortu" class="nav-link" wire:navigate>
-                    <i data-feather="dollar-sign"></i>
-                    <span>Penghasilan Ortu</span>
-                </a>
-            </li>
-            <li class="nav-item {{ $title == 'Tanggungan' ? 'active' : '' }}">
-                <a href="/tanggungan-ortu" class="nav-link" wire:navigate>
-                    <i data-feather="anchor"></i>
-                    <span>Tanggungan Ortu</span>
-                </a>
-            </li>
-            <li class="nav-item {{ $title == 'Usia' ? 'active' : '' }}">
-                <a href="/usia-ortu" class="nav-link" wire:navigate>
-                    <i data-feather="activity"></i>
-                    <span>Usia Ortu</span>
-                </a>
-            </li>
-            <li class="nav-item {{ $title == 'Nilai' ? 'active' : '' }}">
-                <a href="/nilai" class="nav-link" wire:navigate>
-                    <i data-feather="percent"></i>
-                    <span>Nilai</span>
-                </a>
-            </li>
+            @if (Auth::user()->is_admin)
+                <li class="nav-label mt-4">Form Setting</li>
+                <li class="nav-item {{ $title == 'Kriteria' ? 'active' : '' }}">
+                    <a href="/kriteria" class="nav-link" wire:navigate>
+                        <i data-feather="table"></i>
+                        <span>Kriteria</span>
+                    </a>
+                </li>
+                <li class="nav-item {{ $title == 'Pekerjaan' ? 'active' : '' }}">
+                    <a href="/pekerjaan-ortu" class="nav-link" wire:navigate>
+                        <i data-feather="briefcase"></i>
+                        <span>Pekerjaan Ortu</span>
+                    </a>
+                </li>
+                <li class="nav-item {{ $title == 'Penghasilan' ? 'active' : '' }}">
+                    <a href="/penghasilan-ortu" class="nav-link" wire:navigate>
+                        <i data-feather="dollar-sign"></i>
+                        <span>Penghasilan Ortu</span>
+                    </a>
+                </li>
+                <li class="nav-item {{ $title == 'Tanggungan' ? 'active' : '' }}">
+                    <a href="/tanggungan-ortu" class="nav-link" wire:navigate>
+                        <i data-feather="anchor"></i>
+                        <span>Tanggungan Ortu</span>
+                    </a>
+                </li>
+                <li class="nav-item {{ $title == 'Usia' ? 'active' : '' }}">
+                    <a href="/usia-ortu" class="nav-link" wire:navigate>
+                        <i data-feather="activity"></i>
+                        <span>Usia Ortu</span>
+                    </a>
+                </li>
+                <li class="nav-item {{ $title == 'Nilai' ? 'active' : '' }}">
+                    <a href="/nilai" class="nav-link" wire:navigate>
+                        <i data-feather="percent"></i>
+                        <span>Nilai</span>
+                    </a>
+                </li>
+            @endif
 
             <li class="nav-label mt-4">Menu</li>
             <li class="nav-item">

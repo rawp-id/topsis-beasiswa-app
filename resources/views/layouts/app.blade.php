@@ -62,8 +62,8 @@
                 <nav class="nav">
                     {{-- <a href="" class="nav-link"><i data-feather="help-circle"></i></a>
                   <a href="" class="nav-link"><i data-feather="grid"></i></a> --}}
-                    <a href="" class="btn btn-outline-secondary" data-bs-toggle="tooltip" title="Profile"
-                        style="border-radius: 50px"><i data-feather="user"></i></a>
+                    {{-- <a href="" class="btn btn-outline-secondary" data-bs-toggle="tooltip" title="Profile"
+                        style="border-radius: 50px"><i data-feather="user"></i></a> --}}
                 </nav>
             </div><!-- content-header -->
 
